@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>DojoWeather</h1>
+        <div class="cities">
+        <p onclick="load(this)" style="cursor: pointer;">Burbank</p>
+        <p onclick="load(this)" style="cursor: pointer;">Chicago</p>
+        <p onclick="load(this)" style="cursor: pointer;">Dallas</p>
+        </div>
+    </div>
+    <div class="maincont">
+        <div class="sanJose">
+            <h2>San Jose</h2>
+            <div class="right">
+            <p>show temperature in </p>
+            <select name="C/F" id="degree" onchange="convert(this)">
+            <option value="c">C</option>
+            <option value="f" >F</option>
+            </select>
+            </div>    
+        </div>
+        <div class="allweather">
+            <div class="dailyweather">
+                <p>
+                    Today
+                </p>
+                <img src="assets/some_rain.png" alt="rainy">
+                <p>some rain</p>
+                <div class="degrees">
+                    <p class="degreeh" id="x">
+                        24
+                    </p>
+                    <p class="degreel" id="a">
+                        18
+                    </p>
+                </div>
+            </div>
+            <div class="dailyweather">
+                <p>
+                    Tomorrow
+                </p>
+                <img src="assets/some_sun.png" alt="rainy">
+                <p>some sun</p>
+                <div class="degrees" >
+                    <p class="degreeh" id="y">
+                        27
+                    </p>
+                    <p class="degreel" id="b">
+                        19
+                    </p>
+                </div>
+            </div>
+            <div class="dailyweather">
+                <p>
+                    Friday
+                </p>
+                <img src="assets/some_clouds.png" alt="rainy">
+                <p>some clouds</p>
+                <div class="degrees">
+                    <p class="degreeh" id="z">
+                        21
+                    </p>
+                    <p class="degreel" id="b">
+                        16
+                    </p>
+                </div>
+            </div>
+            <div class="dailyweather">
+                <p>
+                    Saturday
+                </p>
+                <img src="assets/some_sun.png" alt="rainy">
+                <p>some sun</p>
+                <div class="degrees">
+                    <p class="degreeh" id="m">
+                        26
+                    </p>
+                    <p class="degreel" id="d">
+                        21
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cookiemsg">
+            <img src="assets/cookie.png" alt="cookie">
+            <p><span>Stop! Cookie Time</span><br>
+                We use cookies (sadly not the edible ones) to presonalize content and ads, to provide social media feautyres 
+                and to analyse our traffic.<a href="#">Read more...</a>
+            </p>
+            <button type="button" onclick="remove(this)">I accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

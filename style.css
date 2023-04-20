@@ -1,0 +1,93 @@
+body{
+    font-family:monaco;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav{
+    background-color: #9fc5f8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+    margin: 0px;
+}
+
+.cities{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.maincont{
+    padding: 0% 10%;
+}
+
+.sanJose{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+select{
+    width: 40px;
+    height: 30px;
+    margin: 10px 0px 10px 10px;
+}
+
+.allweather{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dailyweather{
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.degrees{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dailyweather img{
+    border-radius: 50%;
+    width: 85%;
+}
+.degreeh{
+    color: red;
+}
+.degreel{
+    color:blue ;
+}
+
+.cookiemsg{
+    display: flex;
+    padding: 10px 5px;
+    border: 3px solid black;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: sticky;/* is this correct?*/
+    bottom: 0px;
+}
+
+.cookiemsg img{
+    width: 5%;
+    height: 40%;
+    margin-top: 30px;
+}
+
+.cookiemsg button{
+    height: 25px;
+    width: 100px;
+    margin: 30px 10px;
+    background-color: #9fc5f8;
+    box-shadow: 3px 3px 1px black;
+}
